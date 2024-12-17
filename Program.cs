@@ -19,6 +19,7 @@ while (true)
         NetworkStream stream = client.GetStream();
         StreamReader reader = new StreamReader(stream);
         StreamWriter writer = new StreamWriter(stream);
+        
         writer.AutoFlush = true;
         string request = reader.ReadLine();
 
